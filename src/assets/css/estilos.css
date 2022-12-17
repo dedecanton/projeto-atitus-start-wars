@@ -47,3 +47,40 @@
     cursor: pointer;
     background-color: gray;
 }
+
+.not-found__container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+    text-align: center;
+    color: #3f3d56;
+}
+
+.not-found__container img{
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.not-found__container button{
+    width: fit-content;
+    border: 2px solid #3f3d56;
+    color: #3f3d56;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.not-found__container button:hover{
+    background: #3f3d56;
+    color: white;
+    scale: 1.1;
+}
+

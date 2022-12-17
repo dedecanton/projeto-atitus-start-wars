@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import MenuOpcoes from '../components/MenuOpcoes'
 import { salvarGamers } from '../services/BancoService'
 
-export default function Cadastro(props) {
+export default function Cadastro() {
     const navigate = useNavigate();
 
     const [nome, setNome] = useState("")
