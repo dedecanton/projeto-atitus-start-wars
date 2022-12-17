@@ -7,6 +7,17 @@ export default function MenuOpcoes() {
 
   const { setLogin } = useContext(LoginContext);
 
+  const menus = [
+    { label: 'Home', path: '/' },
+    { label: 'Films', path: '/films' },
+    { label: 'Starships', path: '/starships' },
+    { label: 'People', path: '/people' },
+    { label: 'Planets', path: '/planets' },
+    { label: 'Species', path: '/species' },
+    { label: 'Dúvidas', path: '/duvidas' },
+    { label: 'Sobre', path: '/sobre' },
+  ];
+
   const logoff = () => {
     setLogin(false);
     localStorage.removeItem('login');
@@ -14,15 +25,14 @@ export default function MenuOpcoes() {
   };
   return (
     <div className="menu">
-      <Link to="/menu">
-        <div className="itemMenu">Capa</div>
-      </Link>
-      <Link to="/cadastro">
-        <div className="itemMenu">Cadastro</div>
-      </Link>
-      <div className="itemMenu" onClick={logoff}>
+      {menus.map(({ label, path }) => (
+        <Link to={path} className="itemMenu">
+          {label}
+        </Link>
+      ))}
+      <p className="itemMenu" onClick={logoff}>
         Logoff
-      </div>
+      </p>
     </div>
   );
 }
