@@ -8,6 +8,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import loginService from '../services/AtenticadorService';
 import { LoginContext } from '../contexts/LoginContext';
+import { toast } from 'react-toastify';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ export default function Login() {
       verificarLogin();
       navigate('/menu');
     } catch (error) {
-      alert(error);
+      toast.error(error);
     }
   };
 
