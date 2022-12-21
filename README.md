@@ -5,7 +5,7 @@ https://projeto-atitus-start-wars.web.app/
 **Email:** admin@admin.com <br/>
 **Senha:** admin123
 
-## Aluno
-Nome: André Luís Lorini Canton <br />
-RA: 1129468
+## Alunos
+Nomes: André Luís Lorini Canton - Fabricio Mesomo<br />
+RAs: 1129468 - 1128500
 
